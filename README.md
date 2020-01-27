@@ -8,6 +8,12 @@ To restart the timer it must first be paused, then the restart button becomes av
 
 To change the speed of the timer use the slider, the effect takes place immediately. 
 
+## Timer implementation notes
+
+This timer monitors the wall clock in order to provide precise countdowns. It uses an interval timer(100ms tickrate) to keep track of the state of the timer. A naive approach might just increment the seconds elapsed by the duration of each tick interval, but that breaks down under heavy load, ie. a tick might occur after 105ms instead of 100ms and your time elapsed will start to skew.
+
+By using the wall clock and calculating the elapsed durations the tick interval becomes less important and more importantly will not skew the time elapsed based on scheduling inconsistencies.
+
 ## Screenshots
 
 The default state, with 5 minutes as the default duration. 
