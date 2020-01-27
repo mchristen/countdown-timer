@@ -24,9 +24,10 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(3),
     },
     durationInput: {
-      maxWidth: "130px",
+      maxWidth: '130px',
     },
     startButton: {
+      paddingTop: '12px',
     },
   })
 );
@@ -52,15 +53,17 @@ const DurationForm: React.FC<DurationFormProps> = (props: DurationFormProps) => 
   const hasError = !duration.valid && duration.value !== '';
   return (
     <form className={classes.durationForm} noValidate autoComplete="off">
-      <Grid container alignItems="center" justify="center" spacing={2}>
+      <Grid container justify="center" spacing={2}>
         <Grid item xs={6} sm={4}>
           <TextField
             id="timer-duration"
             className={classes.durationInput}
             label="Countdown"
+            required
             value={duration.value}
             onChange={handleChange}
             variant="outlined"
+            helperText="Positive integer"
             error={hasError}
             InputLabelProps={{
               shrink: true,
@@ -70,15 +73,17 @@ const DurationForm: React.FC<DurationFormProps> = (props: DurationFormProps) => 
             }}
           />
         </Grid>
-        <Grid item xs={2} className={classes.startButton}>
-          <Button
-            variant="contained"
-            color="primary"
-            disabled={startButtonDisabled}
-            onClick={() => props.onStart(Number(duration.value))}
-          >
-            {!props.paused ? 'Start' : 'Restart'}
-          </Button>
+        <Grid item xs={2}>
+          <div className={classes.startButton}>
+            <Button
+              variant="contained"
+              color="primary"
+              disabled={startButtonDisabled}
+              onClick={() => props.onStart(Number(duration.value))}
+            >
+              {!props.paused ? 'Start' : 'Restart'}
+            </Button>
+          </div>
         </Grid>
       </Grid>
     </form>
