@@ -18,19 +18,19 @@ By using the wall clock and calculating the elapsed durations the tick interval 
 
 The default state, with 5 minutes as the default duration. 
 
-![image](https://user-images.githubusercontent.com/1231534/73197920-cf76f180-40f7-11ea-8115-ca1086590a96.png)
+![image](https://user-images.githubusercontent.com/1231534/73200275-11099b80-40fc-11ea-89fb-5a1a645ed669.png)
 
 Halfway through the countdown a status text will appear indicating so. 
 
-![image](https://user-images.githubusercontent.com/1231534/73198168-372d3c80-40f8-11ea-8158-a08049112660.png)
+![image](https://user-images.githubusercontent.com/1231534/73200349-38606880-40fc-11ea-866d-5527ce0cb738.png)
 
 When there are less than 20 seconds remaining the status text will turn red and then will start blinking when there is less than 10 seconds remaining. 
 
-![image](https://user-images.githubusercontent.com/1231534/73198063-0cdb7f00-40f8-11ea-868f-766f8d22d52b.png)
+![image](https://user-images.githubusercontent.com/1231534/73200408-54fca080-40fc-11ea-9fc9-47d3349f44bc.png)
 
 When the timer is over the status text will change to "Time's up!" and the start button will become enabled again.
 
-![image](https://user-images.githubusercontent.com/1231534/73198215-49a77600-40f8-11ea-8068-146d78dec632.png)
+![image](https://user-images.githubusercontent.com/1231534/73200443-680f7080-40fc-11ea-9d79-cb3f42caaaba.png)
 
 
 ## Available Scripts
