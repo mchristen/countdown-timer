@@ -1,4 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A simple Countdown Timer
+
+To use, enter the number of minutes in the countdown box and then press start, the timer will begin immediately. 
+
+While the timer is active you may pause/resume the countdown with the button next to the time remaining.
+
+To restart the timer it must first be paused, then the restart button becomes available. This is to prevent accidental restarting of the timer while it is running. 
+
+To change the speed of the timer use the slider, the effect takes place immediately. 
+
+## Screenshots
+
+The default state, with 5 minutes as the default duration. 
+
+![image](https://user-images.githubusercontent.com/1231534/73197920-cf76f180-40f7-11ea-8115-ca1086590a96.png)
+
+Halfway through the countdown a status text will appear indicating so. 
+
+![image](https://user-images.githubusercontent.com/1231534/73198168-372d3c80-40f8-11ea-8158-a08049112660.png)
+
+When there are less than 20 seconds remaining the status text will turn red and then will start blinking when there is less than 10 seconds remaining. 
+
+![image](https://user-images.githubusercontent.com/1231534/73198063-0cdb7f00-40f8-11ea-868f-766f8d22d52b.png)
+
+When the timer is over the status text will change to "Time's up!" and the start button will become enabled again.
+
+![image](https://user-images.githubusercontent.com/1231534/73198215-49a77600-40f8-11ea-8068-146d78dec632.png)
+
 
 ## Available Scripts
 
@@ -26,19 +53,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
